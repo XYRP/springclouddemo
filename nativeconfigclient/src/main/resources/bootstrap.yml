@@ -1,0 +1,10 @@
+#用于读取服务端本地的配置，文件名必须为bootstrap
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev                 #spring.application.name的值与spring.profiles.active的值用`-`拼接起来就是服务端要读取的配置文件名称
+  cloud:
+    config:
+      uri: http://localhost:8762   #本地configserver的访问路径（指定配置文件所在的服务器地址）
+      fail-fast: true               #设置客户端优先判断ConfigServer获取是否正常

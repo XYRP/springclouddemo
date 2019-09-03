@@ -1,0 +1,1 @@
+负载均衡的解决方案   就是对RestTimplate实例上加上@LoadBalanced注解

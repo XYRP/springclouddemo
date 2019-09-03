@@ -1,0 +1,6 @@
+#此文件为客户端读取的配置文件
+
+server:
+  port: 8070
+
+foo: foo version 1      #指定版本号

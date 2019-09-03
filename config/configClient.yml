@@ -1,0 +1,12 @@
+#用于测试config远程配置中心，此文件将传到gitHub中供客户端远程读取配置
+server:
+  port: 8070
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: configclient
